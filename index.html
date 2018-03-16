@@ -1,0 +1,311 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Express Computing</title>
+		<link href="images/favicon.png" rel="shortcut icon" type="image/x-icon" />
+		<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+		<script src="js/jquery.min.js"></script>
+		 <!-- Custom Theme files -->
+		 <!---- animated-css ---->
+		<link href="css/animate.css" rel="stylesheet" type="text/css" media="all">
+		<script src="js/wow.min.js"></script>
+		<script>
+		 new WOW().init();
+		</script>
+		<!---- animated-css ---->
+		  <!---- start-smoth-scrolling---->
+		<script type="text/javascript" src="js/move-top.js"></script>
+		<script type="text/javascript" src="js/easing.js"></script>
+		<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+				});
+			});
+		</script>
+		 <!---- start-smoth-scrolling---->
+		<link href="css/style.css" rel='stylesheet' type='text/css' />
+   		 <!-- Custom Theme files -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+		</script>
+		<!----webfonts--->
+		<link href='//fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+		<link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+		<!---//webfonts--->
+		<!----start-top-nav-script---->
+		<script>
+			$(function() {
+				var pull 		= $('#pull');
+					menu 		= $('nav ul');
+					menuHeight	= menu.height();
+				$(pull).on('click', function(e) {
+					e.preventDefault();
+					menu.slideToggle();
+				});
+				$(window).resize(function(){
+	        		var w = $(window).width();
+	        		if(w > 320 && menu.is(':hidden')) {
+	        			menu.removeAttr('style');
+	        		}
+	    		});
+			});
+		</script>
+		<!----//End-top-nav-script---->
+	</head>
+	<body>
+		<div class="bg">
+		<!----- start-header---->
+			<div id="home" class="header wow bounceInDown" data-wow-delay="0.4s">
+					<div class="top-header">
+						<div class="container">
+						<div class="logo">
+							<a href="#"><img src="images/logo.png" title="dreams" /></a>
+						</div>
+						<!----start-top-nav---->
+						 <nav class="top-nav">
+							<ul class="top-nav">
+								<li class="active"><a href="#home" class="scroll">Home</a></li>
+								<li><a href="#services" class="scroll">Services</a></li>
+								<li><a href="#port" class="scroll">Portfolio</a></li>
+								<li><a href="#team" class="scroll">Team</a></li>
+								<li><a href="#team" class="scroll">Contact</a></li>
+							</ul>
+							<a href="#" id="pull"><img src="images/menu-icon.png" title="menu" /></a>
+						</nav>
+						<div class="clearfix"> </div>
+					</div>
+				</div>
+			</div>
+			<!----- //End-header---->
+			<!---- banner ---->
+			<div class="banner wow fadeIn" data-wow-delay="0.5s">
+				<div class="container">
+					<div class="banner-info text-center">
+						<h1>COMPLETE IT SOLUTION FOR YOUR BUSINESS</h1><br />
+						<span> </span>
+						<p>Express Computing Pvt. Ltd. is an IT Company established with the object of excelling in the fields of IT and IT enabled services.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+			<!---- banner ---->
+			<!--- services --->
+			<div id="services" class="services">
+				<div class="container">
+					<div class="service-head text-center">
+						<h2>Our Services</h2>
+
+						<span> </span>
+					</div>
+					<!--- services-grids --->
+					<div class="services-grids text-center">
+						<div class="col-md-4">
+							<div class="service-grid wow bounceIn" data-wow-delay="0.4s">
+								<span class="service-icon2"> </span>
+								<h3>Web/Software Development</h3>
+								<p>We provide secure, scalable and quality softwares to individuals, educational institutions and businesses.</p>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="service-grid wow bounceIn" data-wow-delay="0.4s">
+								<span class="service-icon1"> </span>
+								<h3>Hardware/Networking Solutions</h3>
+								<p>We provide hardware and networking solutions to clients ranging from small to medium scale business houses.</p>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="service-grid wow bounceIn" data-wow-delay="0.4s">
+								<span class="service-icon3"> </span>
+								<h3>Graphic/Database Design</h3>
+								<p>We provide world class graphic and database designs for your object of interest.</p>
+							</div>
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+					<!--- services-grids --->
+					<div class="service-head text-center">
+						<h3>Give us a chance and we will surprise you</h3>
+						<span> </span>
+					</div>
+				</div>
+			</div>
+			<!--- services --->
+			<div class="clearfix"> </div>
+
+			<!--- portfolio ---->
+			<div id="port" class="portfolio">
+				<div class="portfolio-top">
+						<div class="portfolio-top-left wow fadeInLeft" data-wow-delay="0.4s">
+							<h3>Company Portfolio</h3>
+						</div>
+				</div>
+
+				<!---- portfolio-works ---->
+				<div class="portfolio-works">
+					<div class="col-md-4 portfolio-work-grid wow bounceIn" data-wow-delay="0.4s">
+						<div class="portfolio-work-grid-pic">
+							<img src="images/p1.png" title="wesnepal.com" />
+						</div>
+						<a href="http://www.wesnepal.com" target="_blank">
+						<div class="portfolio-work-grid-caption">
+							<h4>Western Education Services</h4>
+							<p>Here you can find your suitable educational institution from all over the world.</p>
+						</div>
+						</a>
+					</div>
+					<div class="col-md-4 portfolio-work-grid wow bounceIn" data-wow-delay="0.4s">
+						<div class="portfolio-work-grid-pic">
+							<img src="images/p2.png" title="luminouspharma.com" />
+						</div>
+						<a href="http://www.luminouspharma.com/" target="_blank">
+						<div class="portfolio-work-grid-caption">
+							<h4>Luminous Pharma</h4>
+							<p>Luminous Pharma Pvt. Ltd. is one of the leading company of Nutraceuticals product in Nepal.</p>
+						</div>
+						</a>
+					</div>
+					<div class="col-md-4 portfolio-work-grid wow bounceIn" data-wow-delay="0.4s">
+						<div class="portfolio-work-grid-pic">
+							<img src="images/p3.png" title="lwpn.org.np" />
+						</div>
+						<a href="http://www.lwpn.org.np/" target="_blank">
+						<div class="portfolio-work-grid-caption">
+							<h4>Folklore Council of Nepal</h4>
+							<p>Folklore Council, Nepal works for preservation of folklores.</p>
+						</div>
+						</a>
+					</div>
+					<div class="col-md-4 portfolio-work-grid wow bounceIn" data-wow-delay="0.4s">
+						<div class="portfolio-work-grid-pic">
+							<img src="images/p4.png" title="reliablenursing.com.au" />
+						</div>
+						<a href="http://reliablenursing.com.au/" target="_blank">
+						<div class="portfolio-work-grid-caption">
+							<h4>Reliable Nursing Agency</h4>
+							<p>Reliable Nursing Agency is an Accredited Home Nursing Service owned and operated by Registered Nurses.</p>
+						</div>
+						</a>
+					</div>
+					<div class="col-md-4 portfolio-work-grid wow bounceIn" data-wow-delay="0.4s">
+						<div class="portfolio-work-grid-pic">
+							<img src="images/p5.png" title="narc.gov.np" />
+						</div>
+						<a href="http://narc.gov.np/" target="_blank">
+						<div class="portfolio-work-grid-caption">
+							<h4>Nepal Agriculture Research Council</h4>
+							<p>Nepal Agricultural Research Council (NARC) was established in 1991...</p>
+						</div>
+						</a>
+					</div>
+					<div class="col-md-4 portfolio-work-grid wow bounceIn" data-wow-delay="0.4s">
+						<div class="portfolio-work-grid-pic">
+							<img src="images/p6.png" title="watchnepal.com" />
+						</div>
+						<a href="http://watchnepal.com/" target="_blank">
+						<div class="portfolio-work-grid-caption">
+							<h4>Watch Nepal</h4>
+							<p>A complete news site all over the world.</p>
+						</div>
+						</a>
+					</div>
+
+				
+				</div>	<!---- portfolio-works ---->
+			</div>
+				<div class="clearfix"> </div>
+		<!--- portfolio ---->
+			
+			<!---- team --->
+			<div id="team" class="team-members">
+					<div class="wrap"> 
+						<div class="tm-head">
+							<h3>Core Team</h3>
+						</div>
+						<div class="tm-head-grids">
+							<div class="tm-head-grid wow fadeInLeft" data-wow-delay="0.4s">
+								<img src="images/team-member1.jpg" alt="Rakesh Kumar Bachchan">
+								<h4>Rakesh K. Bachchan</h4>
+								<h5>Director/Database Developer</h5>
+							</div>
+							<div class="tm-head-grid wow fadeInUp" data-wow-delay="0.4s">
+								<img src="images/team-member2.jpg" alt="Ram Bahadur Thapa">
+								<h4>Ram Bahadur Thapa</h4>
+								<h5>HR Manager/Graphic Designer</h5>
+							</div>
+							<div class="tm-head-grid wow fadeInRight" data-wow-delay="0.4s">
+								<img src="images/team-member3.jpg" alt="Bhim Rawat">
+								<h4>Bhim Rawat</h4>
+								<h5>Web Developer</h5>
+							</div>
+							<div class="clearfix"> </div>
+						</div>
+					</div>
+				</div>
+				
+			<!---- team --->
+
+			<!---- contact --->
+			<div class="contact">
+				<div class="container">
+				<div class="contact-grids">
+					<div class="col-md-12">
+						<div class="contact-left wow fadeInRight" data-wow-delay="0.4s">
+							<h3>Contact Us</h3>
+							<label>We are located at:
+							<address>Kirtipur, Kathmandu, Nepal</address></label>
+							<div class="contact-left-grids">
+								<div class="col-md-3">
+									<div class="contact-left-grid">
+										<p><span class="c-mobi"> </span>(977) 9843-113164</p>
+									</div>
+								</div>
+								<div class="col-md-5">
+									<div class="contact-right-grid">
+										<p><span class="c-msg"> </span><a href="mailto:info@expresscomputing.com.np">info@expresscomputing.com.np</a>
+										</p>
+									</div>
+								</div>
+								<div class="col-md-4">
+									<div class="contact-right-grid">
+										<p>
+										<span class="c-face"> </span><a href="http://www.facebook.com/expresscomputingnp" target="_blank">fb.com/expresscomputingnp</a></p>
+									</div>
+								</div>
+								<div class="clearfix"> </div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+				
+				<!--- copy-right ---->
+				<div class="copy-right text-center">
+					<p>Copyright &copy; 2018 Express Computing Pvt. Ltd. All rights reserved.
+					<script type="text/javascript">
+									$(document).ready(function() {
+										/*
+										var defaults = {
+								  			containerID: 'toTop', // fading element id
+											containerHoverID: 'toTopHover', // fading element hover id
+											scrollSpeed: 1200,
+											easingType: 'linear' 
+								 		};
+										*/
+										
+										$().UItoTop({ easingType: 'easeOutQuart' });
+										
+									});
+								</script>
+									<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+				</div>
+				<!--- copy-right ---->
+			</div>
+			</div>
+			<!---- contact --->
+		</div>
+	</body>
+</html>
